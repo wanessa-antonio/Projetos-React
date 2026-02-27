@@ -1,15 +1,16 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
+// Routing
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 /* React Rotas
 https://reactrouter.com/en/main/components/link
 */
-
+// Pages
 import { HomePage } from "./pages/Home/HomePage";
 import { MinhasPastasPage } from "./pages/MinhasPastas/MinhasPastasPage";
+
+// Partials
 import { HeaderPartial } from './partials/HeaderPartial/HeaderPartial';
+
+// Context
 import { AppContext } from "./store/AppContext";
 
 const initialState = {
