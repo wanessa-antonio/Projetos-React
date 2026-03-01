@@ -9,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement);
+// React.StrictMode helps highlight potential problems during development
 root.render(
   <React.StrictMode>
     <App />
