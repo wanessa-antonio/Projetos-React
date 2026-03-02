@@ -9,8 +9,8 @@ import { ModalSavePin } from '../../containers/ModalSavePin/ModalSavePin'
 import { ModalCreateFolder } from '../../containers/ModalCreateFolder/ModalCreateFolder';
 import { Notification } from '../../components/Notification/Notification';
 import { useAppContext } from '../../store/AppContext';
-import { saveFolderSuccessType } from '../../store/types'; // conferir
-import { fetchPinsAction } from '../../store/actions'; // conferir
+import { saveFolderSuccessType } from '../../store/types'; 
+import { fetchPinsAction } from '../../store/actions'; 
 
   
 export const HomePage = () => {
@@ -28,7 +28,7 @@ export const HomePage = () => {
 
   useEffect(() => {
     fetchPinsAction(dispatch);
-  }, [])
+  }, [dispatch])
 
   useEffect(() => {
     if (state.type === saveFolderSuccessType) {
@@ -61,4 +61,5 @@ export const HomePage = () => {
   </div>
     
     )
+
 }
